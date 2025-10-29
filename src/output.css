@@ -17,6 +17,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
@@ -198,11 +200,20 @@
   .mt-\[140\] {
     margin-top: 140;
   }
+  .mt-\[140px\] {
+    margin-top: 140px;
+  }
+  .mb-\[7px\] {
+    margin-bottom: 7px;
+  }
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
   .mb-\[72px\] {
     margin-bottom: 72px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
   }
   .flex {
     display: flex;
@@ -264,11 +275,17 @@
   .items-center {
     align-items: center;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .gap-\[14px\] {
     gap: 14px;
   }
   .gap-\[24px\] {
     gap: 24px;
+  }
+  .gap-x-\[18px\] {
+    column-gap: 18px;
   }
   .gap-x-\[32px\] {
     column-gap: 32px;
@@ -276,9 +293,23 @@
   .gap-y-\[20px\] {
     row-gap: 20px;
   }
+  .gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+  .gap-y-\[69px\] {
+    row-gap: 69px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
   }
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
@@ -305,6 +336,10 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -323,6 +358,9 @@
   .text-\[40px\] {
     font-size: 40px;
   }
+  .text-\[88px\] {
+    font-size: 88px;
+  }
   .leading-\[26px\] {
     --tw-leading: 26px;
     line-height: 26px;
@@ -334,6 +372,10 @@
   .leading-\[40px\] {
     --tw-leading: 40px;
     line-height: 40px;
+  }
+  .leading-\[88px\] {
+    --tw-leading: 88px;
+    line-height: 88px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -376,6 +418,11 @@
   .lg\:mb-\[66px\] {
     @media (width >= 64rem) {
       margin-bottom: 66px;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
     }
   }
   .lg\:grid {
